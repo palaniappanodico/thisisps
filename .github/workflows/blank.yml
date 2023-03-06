@@ -16,4 +16,4 @@ jobs:
 
       - name: push the changes to delta
         run: |
-          git pull -s subtree tax main
+          git pull -s subtree https://github.com/palaniappanodico/incometax.git main
