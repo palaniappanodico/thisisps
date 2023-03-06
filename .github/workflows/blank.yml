@@ -3,7 +3,7 @@ name: update sigma folder
 on:
   push:
     branches: [main]
-    paths: "cars/**"
+    paths: "tax/**"
 
 jobs:
   update-sigma:
@@ -16,8 +16,4 @@ jobs:
 
       - name: push the changes to delta
         run: |
-          # git merge --allow-unrelated-histories -X subtree=cars https://github.com/palaniappanodico/wheels.git main
-          # git subtree pull --prefix cars https://github.com/palaniappanodico/wheels.git main --squash
-          git config pull.rebase true
-          git pull --squash -s subtree https://github.com/palaniappanodico/wheels.git main
-          git subtree push --prefix cars https://github.com/palaniappanodico/wheels.git main --squash
+          git pull -s subtree tax main
