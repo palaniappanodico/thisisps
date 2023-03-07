@@ -20,8 +20,4 @@ jobs:
           git config --global user.name "palaniappanodico"
           git config pull.rebase false
           git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
-          git add .
-          git status
-          git commit -m "the changes"
-          git log
-          git push -u origin main
+          git push
