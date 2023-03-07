@@ -20,3 +20,5 @@ jobs:
           git config --global user.name "palaniappanodico"
           git config pull.rebase false
           git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
+          git commit -m "pulled changes"
+          git push
