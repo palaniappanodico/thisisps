@@ -21,3 +21,4 @@ jobs:
           git config pull.rebase false
           git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
           git push
+          git subtree push --prefix tax https://github.com/newfivefour/vimrc.git main
