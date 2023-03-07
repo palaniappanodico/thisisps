@@ -16,9 +16,9 @@ jobs:
 
       - name: push the changes to delta
         run: |
-          # git config --global user.email "ps@odico.dk"
-          # git config --global user.name "palaniappanodico"
-          # git config pull.rebase false
-          # git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
-          # git push
+          git config --global user.email "ps@odico.dk"
+          git config --global user.name "palaniappanodico"
+          git config pull.rebase false
+          git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
+          git push
           git push https://github.com/palaniappanodico/incometax.git $(git subtree split --prefix=tax --onto=https://github.com/palaniappanodico/incometax.git/main):main
