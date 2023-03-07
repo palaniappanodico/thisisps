@@ -21,4 +21,4 @@ jobs:
           # git config pull.rebase false
           # git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
           # git push
-          git push tax $(git subtree split --prefix=tax --onto=tax/main):main
+          git push https://github.com/palaniappanodico/incometax.git $(git subtree split --prefix=tax --onto=https://github.com/palaniappanodico/incometax.git/main):main
