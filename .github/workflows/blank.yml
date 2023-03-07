@@ -22,4 +22,5 @@ jobs:
           git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
           git push
           ls
-          git push subtree https://github.com/palaniappanodico/incometax.git main --force
+          git remote add theTree https://github.com/palaniappanodico/incometax.git
+          git push subtree theTree main --force
