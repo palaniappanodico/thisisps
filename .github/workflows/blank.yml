@@ -21,5 +21,5 @@ jobs:
           git config pull.rebase false
           git pull -s subtree https://github.com/palaniappanodico/incometax.git main --allow-unrelated-histories
           git add .
-          git commit
+          git commit -m "the changes"
           git push
